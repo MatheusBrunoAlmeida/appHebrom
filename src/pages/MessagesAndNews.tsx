@@ -71,7 +71,7 @@ export const MessagesAndNews: React.FC = () => {
                     <Text style={styles.notFoundText}>{notFound}</Text>
                 ):
                     titles.map((data: news) => (
-                        <TouchableOpacity style={styles.card} onPress={() => handleNextScream(data.titulo, data.resumoNoticias, data.linkImagem, data.linkHtml)} key={data.titulo}>
+                        <TouchableOpacity style={styles.card} onPress={() => handleNextScream(data.titulo, data.resumoNoticias, data.linkImagem, data.linkHtml)} key={data}>
                             <View style={styles.cardTitle}>
                                 <Text style={styles.cardTitleText}>
                                     Resumo: {data.resumoNoticias}
